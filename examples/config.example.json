@@ -1,0 +1,89 @@
+{
+  "CONDITIONS": {
+    "contains_c": {
+      "lhs": "dynamic",
+      "rhs": "C",
+      "type": "contains"
+    },
+    "contains_m": {
+      "lhs": "dynamic",
+      "rhs": "M",
+      "type": "contains"
+    },
+    "contains_w_r_c": {
+      "lhs": "dynamic",
+      "rhs": ["W", "R", "C"],
+      "type": "contains"
+    },
+    "equals_a": {
+      "lhs": "dynamic",
+      "rhs": "A",
+      "type": "equals"
+    },
+    "equals_b_a": {
+      "lhs": "dynamic",
+      "rhs": ["B", "A"],
+      "type": "equals"
+    },
+    "starts_a": {
+      "lhs": "dynamic",
+      "rhs": "A",
+      "type": "starts"
+    },
+    "starts_a_b": {
+      "lhs": "dynamic",
+      "rhs": ["A", "B"],
+      "type": "starts"
+    },
+    "ends_z": {
+      "lhs": "dynamic",
+      "rhs": "Z",
+      "type": "ends"
+    },
+    "ends_y_z": {
+      "lhs": "dynamic",
+      "rhs": ["Y", "Z"],
+      "type": "ends"
+    }
+  },
+  "RULES": [
+    {
+      "conditions": [
+        {
+          "id": "contains_c",
+          "expected": true
+        }
+      ],
+      "output": "contains c fulfilled"
+    },
+    {
+      "operator": "or",
+      "conditions": [
+        {
+          "id": "starts_d",
+          "expected": true
+        },
+        {
+          "id": "starts_a_b",
+          "expected": true
+        }
+      ],
+      "output": "starts d or a or b fulfilled"
+    },
+    {
+      "operator": "and",
+      "conditions": [
+        {
+          "id": "contains_m",
+          "expected": true
+        },
+        {
+          "id": "ends_z",
+          "expected": true
+        }
+      ],
+      "output": "starts m and ends z fulfilled"
+    }
+  ],
+  "DEFAULT": "none fulfilled"
+}

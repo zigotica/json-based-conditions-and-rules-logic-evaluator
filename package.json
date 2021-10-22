@@ -1,0 +1,25 @@
+{
+  "name": "json-based-conditions-and-rules-logic-evaluator",
+  "version": "1.0.0",
+  "description": "script that parses some customizable conditions and rules, then outputs a predefined value of that matching rule, or a default value",
+  "keywords": ["JSON", "Node", "Javascript", "Conditions", "Rules", "Parser", "Logic"],
+  "main": "src/parsers/rules-parser/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zigotica/json-based-conditions-and-rules-logic-evaluator"
+  },
+  "author": "Sergi Meseguer <zigotica@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./ --ext .js",
+    "test": "mocha --recursive ./src/**/*.spec.js --exclude node_modules/**/*.spec.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "mocha": "^9.1.3"
+  }
+}
