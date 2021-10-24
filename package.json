@@ -1,6 +1,6 @@
 {
   "name": "json-based-conditions-and-rules-logic-evaluator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "script that parses some customizable conditions and rules, then outputs a predefined value of that matching rule, or a default value",
   "keywords": [
     "JSON",
